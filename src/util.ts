@@ -1,7 +1,7 @@
 import OpenAI from "openai";
 import { ReportPrompt, Report } from "./types";
 
-const SECRET = "SOME_OPENAI_TOKEN";
+const SECRET = "sshhhhhhh!";
 const MODEL = "gpt-4o";
 
 const openai = new OpenAI({

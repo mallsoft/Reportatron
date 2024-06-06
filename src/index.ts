@@ -4,6 +4,12 @@ import { Report, ReportPrompt } from "./types";
 
 const app = new Hono();
 
+app.get("/test", async (c) => {
+  console.log("is ok");
+
+  return c.json({ ok: "yes" });
+});
+
 app.post("/report", async (c) => {
   const body: ReportPrompt = await c.req.json();
 
